@@ -36,7 +36,7 @@
 	if(isset($_FILES['image'])){
 		 require '../../vendor/autoload.php';
 	
-		 $credentials = new Aws\Credentials\Credentials('AKIAI57O2RHNRX2AMV5A', '2VCFRLrqHYLuMXuekO86foAlO1qGwagbjJTqDE9N');
+		 $credentials = new Aws\Credentials\Credentials('/*aqui pones el key*/', '/*aqui pones el secret*/');
 
     $options = [
        'region'            => 'us-east-2',
@@ -53,8 +53,8 @@
 			'region'  => 'us-east-2',
 			'version' => 'latest',
 			'credentials' => [
-				'key'    => "AKIAI57O2RHNRX2AMV5A",
-				'secret' => "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",
+				'key'    => "/*aqui pones el key*/",
+				'secret' => "aqui pones el secret",
 			]
 		]);		
 
